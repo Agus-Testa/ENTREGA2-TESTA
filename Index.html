@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>River Plate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header id ="titulo">
+        <h1>River Plate Delanteros</h1>
+    </header>
+    <section class="container">
+        <article class="post" id="borja">
+            <h2>Miguel Borja</h2>
+            <a href="https://www.transfermarkt.com.ar/miguel-borja/profil/spieler/211397">Presiona aquí para ver más información!</a>
+            <img src="/Img/Borja.png" width="400">
+            <p class="hidden">Miguel Ángel Borja Hernández es un futbolista colombiano que juega como delantero en River Plate. Ha tenido un destacado rendimiento a lo largo de su carrera, siendo reconocido por su habilidad goleadora.</p>
+        </article>
+        <article class="post" id="colidio">
+            <h2>Facundo Colidio</h2>
+            <a href="https://www.transfermarkt.com.ar/facundo-colidio/profil/spieler/491705">Presiona aquí para ver más información!</a>
+            <img src="/Img/Colidio.png" width="400">
+            <p class="hidden">Facundo Colidio es un futbolista argentino que juega como delantero en River Plate. Tiene un gran potencial y se espera que tenga un papel importante en el equipo en el futuro.</p>
+        </article>
+        <article class="post" id="solari">
+            <h2>Pablo Solari</h2>
+            <a href="https://www.transfermarkt.com.ar/pablo-solari/profil/spieler/756991">Presiona aquí para ver más información!</a>
+            <img src="/Img/Solari.png" width="400">
+            <p class="hidden">Pablo Solari es un futbolista argentino que juega como delantero en River Plate. Es conocido por su versatilidad y habilidad técnica en el campo de juego.</p>
+        </article>
+        <article class="post" id="agregado">
+            <h2>Jugador Agregado/Agregados</h2>
+            <a href="jugadorAgregado.html">Presiona aquí para verlo/verlos!</a>
+            <img src="Img/Jugador Misterioso.jpg" width="400">
+            <p class="hidden">Este jugador aún no ha sido revelado oficialmente por River Plate. Se espera que sea una incorporación importante al equipo.</p>
+        </article>
+    </section>
+    <footer>
+        <section>
+            <a href="#titulo">Volver Arriba</a>
+            <a href="mailto:testaagus9del@gmail.com">Contáctame por gmail aquí</a>
+        </section>        
+        <p>Derechos de autor 2024</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const articles = document.querySelectorAll('.post')
+
+            articles.forEach(article => {
+                article.addEventListener('click', function() {
+                    const additionalInfo = this.querySelector('p')
+                    additionalInfo.classList.toggle('hidden')
+                })
+            })
+        })
+    </script>
+</body>
+</html>
+
